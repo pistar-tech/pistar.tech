@@ -9,7 +9,7 @@ import aftab from "@/assets/images/team/aftab.jpg";
 const TeamDetailsArea = () => {
   return (
     <>
-      <div className="team-details light-bg border-top pt-120 pb-60 lg-pt-80 ">
+      <div id="anis-fatema" className="team-details light-bg border-top pt-120 pb-60 lg-pt-80 ">
         <div className="container">
           <div className="bg-wrapper">
             <div className="row">
@@ -88,7 +88,7 @@ const TeamDetailsArea = () => {
           </div>
         </div>
       </div>
-      <div className="team-details light-bg border-top pt-60 pb-120 lg-pt-80 ">
+      <div id="aftab-hussain" className="team-details light-bg border-top pt-60 pb-120 lg-pt-80 ">
         <div className="container">
           <div className="bg-wrapper">
             <div className="row">
@@ -123,14 +123,19 @@ const TeamDetailsArea = () => {
                       ></Image>
                     </Link>
                   </h2>
-                  <div className="post pb-5">Technical Advisor</div>
+                  <div className="post pb-3">Co-Founder and Technical Advisor</div>
+                  <div className="post pb-5" style={{ fontSize: '0.9em', fontStyle: 'italic', color: '#666' }}>
+                    Author of the world&apos;s first book on Flexible Electronics - &quot;Introduction to Flexible Electronics&quot;
+                  </div>
                   {/* <h6 className="fw-bold">About Me</h6> */}
                   <p className="m-0">
                     A visionary in the field of flexible electronics, Dr. Aftab
                     M. Hussain is the Co-Founder and Chief Technology Officer of
-                    PiStarTech. His journey into the world of electronics is
-                    deeply rooted in his academic pursuits, combined with an
-                    innate passion for solving real-world problems.
+                    PiStarTech. Author of the world&apos;s first book on Flexible 
+                    Electronics - &quot;Introduction to Flexible Electronics&quot;, his 
+                    journey into the world of electronics is deeply rooted in his 
+                    academic pursuits, combined with an innate passion for solving 
+                    real-world problems.
                   </p>
                 </div>
               </div>

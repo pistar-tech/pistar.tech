@@ -14,6 +14,7 @@ import TextFeatureThree from "@/components/text-feature/text-feature-three";
 import FeedbackOne from "@/components/feedback/feedback-one";
 import PartnersSliderOne from "@/components/partners/partners-slider-one";
 import TeamSectionThree from "@/components/team/team-section-three";
+import TimelineScroll from "@/components/timeline/timeline-scroll";
 import HomeFourBlogs from "@/components/blogs/home-4-blogs";
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import TextFeatureHome from "@/components/text-feature/text-feature-home";
@@ -70,7 +71,7 @@ const AboutUsPage = () => {
           <TextFeatureAbout style_2={true} />
           {/* text feature one area end */}
 
-          <BlockFeatureAbout style_2={true}  />
+
 
           {/* block feature one area start */}
           {/* <BlockFeatureOne style_2={true} /> */}
@@ -109,6 +110,10 @@ const AboutUsPage = () => {
           {/* team three start */}
           <TeamSectionThree />
           {/* team three end */}
+
+          {/* timeline start */}
+          <TimelineScroll />
+          {/* timeline end */}
 
           {/* <div className="partner-logo-one pt-80 lg-pt-40 pb-80 lg-pb-40">
             <div className="container">

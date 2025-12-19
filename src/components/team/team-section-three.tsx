@@ -21,17 +21,17 @@ const TeamSectionThree = ({ style_2 = false }: { style_2?: boolean }) => {
           <div className="container">
             <div className="position-relative">
               <div className="title-one details-meta mb-40 lg-mb-10 wow fadeInUp">
-                <h3>Founders </h3>
+                <h3>Our Team</h3>
               </div>
               <p className="text-xl text-dark mb-30 p-20 lg-mb-10">
-              Our founder is committed to innovation and creating products that make life easier.
-                </p>
+                Committed to innovation and creating products that make life easier.
+              </p>
 
               <div className="row justify-content-center">
                 {teams.map((item, i) => (
                   <div
                     key={i}
-                    className="col-lg-3 col-sm-6 wow fadeInUp"
+                    className="col-lg-4 col-md-6 col-sm-6 wow fadeInUp"
                     data-wow-delay={`0.${i}s`}
                   >
                     <TeamSingleTwo team={item} spacing="mt-35" />

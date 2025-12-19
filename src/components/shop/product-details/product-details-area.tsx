@@ -10,6 +10,7 @@ import { add_cart_product, decrement, increment } from "@/redux/features/cart";
 import { add_to_wishlist } from "@/redux/features/wishlist";
 import { calculateDiscountedPrice } from "@/utils/utils";
 import { auth } from "@/database/firebase"; // Import Firebase auth
+import Odometer from "@/components/ui/Odometer";
 
 const ProductDetailsArea = ({ product }: { product: IProduct }) => {
   const [isWishlistActive, setIsWishlistActive] = useState(false);
@@ -52,6 +53,7 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
     title,
     old_price,
   } = product || {};
+  const isPreorderProduct = title === "Podiascanner Mat" || title === "Smart Chair";
   const { orderQuantity } = useAppSelector((state) => state.cart);
   const [activeImg, setActiveImg] = useState(related_images[0]);
   const dispatch = useAppDispatch();
@@ -112,7 +114,7 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
               <div className="stock-tag">In Stock</div>
               <h2 className="product-name">{title}</h2>
               <div className="price">
-                {old_price && <del>₹{old_price}</del>} ₹{price}
+                {old_price && <del>₹{old_price}</del>} {price===49999 ? (<Odometer value={`₹${price}`} />) : (<>₹{price}</>)}
               </div>
               <p className="availability">{quantity} Piece Available </p>
               <p className="description-text">{sm_desc}</p>
@@ -182,8 +184,11 @@ const ProductDetailsArea = ({ product }: { product: IProduct }) => {
                       className="flex-fill text-center btn-ten tran3s w-100"
                       style={{ padding: "0px 15px" }}
                     >
-                      {" "}
-                      Login to Buy <i className="bi bi-person-circle"></i>
+                      {isPreorderProduct ? (
+                        <>Preorder <i className="bi bi-bag-plus"></i></>
+                      ) : (
+                        <>Login to Buy <i className="bi bi-person-circle"></i></>
+                      )}
                     </span>
                   </a>
                 )}

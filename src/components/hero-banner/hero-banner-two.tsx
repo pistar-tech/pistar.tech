@@ -86,11 +86,11 @@ const HeroBannerTwo = () => {
                   className="text-xl pt-35 pb-35 wow fadeInUp text-white"
                   data-wow-delay="0.1s"
                 >
-                  Introducing the DiaPS Mat: Accurate, Affordable, and Portable
+                  Introducing the Podiascanner Mat: Accurate, Affordable, and Portable
                   Plantar Pressure Analysis.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
-                  <Link href="/about-us" className="btn-four mt-15 me-4">
+<Link href="/about-us" className="btn-four btn-cta-arrow mt-15 me-4">
                     Explore Our Technology
                   </Link>
                 </div>
@@ -123,7 +123,7 @@ const HeroBannerTwo = () => {
                   Enhance performance with PiStarTech&apos;s advanced flexible pressure sensors tailored for medical diagnostics
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
-                  <Link href="/about-us" className="btn-four mt-15 me-4">
+<Link href="/about-us" className="btn-four btn-cta-arrow mt-15 me-4">
                     Explore Our Technology
                   </Link>
                 </div>
@@ -156,7 +156,7 @@ const HeroBannerTwo = () => {
                  Innovating healthtech with artificial intelligence for smart sensor-integrated solutions to ensure correct seating and standing postures.
                 </p>
                 <div className="d-inline-flex flex-wrap align-items-center">
-                  <Link href="/about-us" className="btn-four mt-15 me-4">
+<Link href="/about-us" className="btn-four btn-cta-arrow mt-15 me-4">
                     Explore Our Technology
                   </Link>
                 </div>

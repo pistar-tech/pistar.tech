@@ -6,7 +6,7 @@ import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import FooterThree from "@/layout/footer/footer-three";
 import blog_bg from "@/assets/images/media/ArticleBanner.png";
 import shape from "@/assets/images/shape/shape_34.svg";
-import FancyBannerThree from "@/components/fancy-banner/fancy-banner-three";
+
 import NewsletterBanner from "@/components/newsletter/newsletter-banner";
 import FooterOne from "@/layout/footer/footer-one";
 import BlogList from "@/components/dynamic/bloglist";
@@ -26,7 +26,7 @@ const ArticlePage = () => {
         <main>
           {/* breadcrumb start */}
           <BreadcrumbOne
-            title="Our Article"
+            title="Press Release"
             subtitle="Innovative Flexible Pressure Sensors for Smart Solutions"
             page="Article"
             bg_img={blog_bg}
@@ -41,9 +41,7 @@ const ArticlePage = () => {
           {/* <BlogList /> */}
           <ArticleList />
 
-          {/* fancy banner three start */}
-          <FancyBannerThree />
-          {/* fancy banner three end */}
+
 
           {/* news letter start */}
           {/* <NewsletterBanner /> */}
