@@ -50,6 +50,7 @@ import TextFeatureEight from "@/components/text-feature/text-feature-eight";
 import TextFeatureTen from "@/components/text-feature/text-freature-ten";
 import PopUpModal from "@/components/common/popup-model";
 import ImgPopUp from "@/components/common/img-popup";
+import TestimonialsSection from "@/components/testimonials";
 
 const backImg1 = {
   backgroundImage: `url('${bg_image1.src}')`,
@@ -324,6 +325,7 @@ export default function HomePage() {
           <PortfolioTwo />
           {/* blog item end */}
           <AwardsSection />
+          <TestimonialsSection />
           <div
             className="contact-us-section pt-80 lg-pt-80"
             style={backImg2}
